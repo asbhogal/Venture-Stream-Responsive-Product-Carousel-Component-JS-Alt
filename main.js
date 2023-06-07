@@ -14,8 +14,13 @@ const createElement = (tag, attributes = {}, content = "") => {
 const carousel = document.querySelector(".carousel");
 
 products.forEach((product) => {
-  const productCard = createElement("div", {
-    class: "product-card snap-center",
+  const productCard = createElement("a", {
+    href: "#",
+    class:
+      "product-card snap-center flex flex-col no-underline hover:scale-105 transition",
+  });
+  const arrowContainer = createElement("div", {
+    class: "product-arrow-container",
   });
   const productImg = createElement("img", {
     class: "product-image",
@@ -30,12 +35,12 @@ products.forEach((product) => {
     product.name
   );
   const arrowIcon = createElement("img", {
-    class: "arrow-icon",
+    class: "product-arrow",
     src: "./icons/Arrow.svg",
     alt: "Arrow icon",
   });
 
-  productCard.append(productImg, productTitle, arrowIcon);
-
+  productCard.append(productImg, productTitle, arrowContainer);
+  arrowContainer.append(arrowIcon);
   carousel.appendChild(productCard);
 });
