@@ -1,0 +1,14 @@
+.app {
+  display: flex;
+  > * {
+    display: inherit;
+  }
+  &__container {
+    flex-direction: column;
+    gap: 20px;
+    &__carousel {
+      display: flex;
+      gap: 20px;
+    }
+  }
+}
