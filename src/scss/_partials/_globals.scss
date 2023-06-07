@@ -1,0 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+  &:is(*, &::before, &::after) {
+    box-sizing: border-box;
+  }
+}

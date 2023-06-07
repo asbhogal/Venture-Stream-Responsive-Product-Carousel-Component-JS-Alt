@@ -1,0 +1,41 @@
+@use "./_partials/globals" as *;
+@use "./_partials/typography" as *;
+
+* {
+  outline: 1px solid red;
+}
+
+.container-title {
+  font-size: clamp(1.75rem, 1.6562rem + 0.382vw, 2rem);
+}
+
+.product-image {
+  width: 396px;
+}
+
+@media only screen and (min-width: 394px) {
+  .container {
+    top: 100px;
+    left: 140px;
+  }
+}
+
+@media only screen and (max-width: 394px) {
+  .container {
+    top: 40px;
+    left: 37px;
+  }
+  .product-image {
+    width: 287px;
+  }
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card .dragging {
+  scroll-behavior: auto;
+  cursor: grab;
+  user-select: none;
+}

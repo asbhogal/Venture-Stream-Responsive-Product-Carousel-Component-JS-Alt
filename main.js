@@ -1,4 +1,4 @@
-import "./style.css";
+import "./src/scss/index.scss";
 
 import products from "./src/js/constants/productsData";
 
