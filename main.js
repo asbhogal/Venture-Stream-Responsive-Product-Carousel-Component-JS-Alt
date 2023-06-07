@@ -15,8 +15,7 @@ const carousel = document.querySelector(".carousel");
 
 products.forEach((product) => {
   const productCard = createElement("div", {
-    key: product.id,
-    class: "product-card",
+    class: "product-card snap-center",
   });
   const productImg = createElement("img", {
     class: "product-image",
@@ -36,9 +35,7 @@ products.forEach((product) => {
     alt: "Arrow icon",
   });
 
-  productCard.appendChild(productImg);
-  productCard.appendChild(productTitle);
-  productCard.appendChild(arrowIcon);
+  productCard.append(productImg, productTitle, arrowIcon);
 
   carousel.appendChild(productCard);
 });
