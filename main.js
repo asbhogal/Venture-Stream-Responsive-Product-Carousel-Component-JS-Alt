@@ -11,13 +11,13 @@ const createElement = (tag, attributes = {}, content = "") => {
   return element;
 };
 
-const carousel = document.querySelector(".carousel");
+const carousel = document.querySelector(".app__container__carousel");
 
 products.forEach((product) => {
   const productCard = createElement("a", {
     href: "#",
     class:
-      "product-card snap-center flex flex-col no-underline hover:scale-105 transition",
+      "app__container__carousel__product-card snap-center flex flex-col no-underline hover:scale-105 transition",
   });
   const arrowContainer = createElement("div", {
     class: "product-arrow-container",
