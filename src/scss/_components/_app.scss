@@ -17,10 +17,10 @@
       gap: 20px;
       overflow-x: scroll;
       &__product-card {
-        transition: $transition-03;
+        transition: $transition;
         &:hover {
           scale: 1.05;
-          transition: $transition-03;
+          transition: $transition;
         }
         &__product-arrow-container {
           display: none;

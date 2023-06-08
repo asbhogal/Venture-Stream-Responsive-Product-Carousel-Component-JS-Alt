@@ -1,12 +1,29 @@
-@media only screen and (width <=425px) {
-  .app__container__container-title,
-  .app__container__carousel {
+@media only screen and (width >= 426px) {
+  .app__container {
+    &__container-title {
+      padding-top: 100px;
+      padding-left: 140px;
+    }
+    &__carousel {
+      padding-left: 140px;
+      &__product-card__product-image {
+        width: 396px;
+      }
+    }
   }
 }
 
-@media only screen and (width >= 426px) {
-  .app__container__container-title,
-  .app__container__carousel {
-    padding: 142px 0 0 0;
+@media only screen and (width <=425px) {
+  .app__container {
+    &__container-title {
+      padding-top: 40px;
+      padding-left: 35px;
+    }
+    &__carousel {
+      padding-left: 35px;
+      &__product-card__product-image {
+        width: 287px;
+      }
+    }
   }
 }
