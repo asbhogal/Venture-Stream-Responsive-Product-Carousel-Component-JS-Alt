@@ -31,4 +31,4 @@ This has been created using vanilla JS (functional programming), SASS (w/ BEM me
 
 <strong>:link: Links</strong><br>
 
-- <a target="_blank" href="https://venture-stream-responsive-product-carousel-component.vercel.app/">Venture Stream - Responsive Product Carousel Component</a>
+- <a target="_blank" href="https://venture-stream-product-carousel-component-js-alt.vercel.app/">Venture Stream - Responsive Product Carousel Component (JS alt)</a>
