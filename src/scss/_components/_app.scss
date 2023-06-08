@@ -7,20 +7,31 @@
   }
   &__container {
     flex-direction: column;
-    gap: 20px;
     overflow-x: hidden;
     &__container-title {
       font-size: clamp(1.75rem, 1.6562rem + 0.382vw, 2rem);
+      font-weight: 700;
     }
     &__carousel {
       display: flex;
       gap: 20px;
+      padding-top: 20px;
       overflow-x: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
       &__product-card {
+        text-decoration: none;
         transition: $transition;
         &:hover {
           scale: 1.05;
           transition: $transition;
+        }
+        &__product-title {
+          color: $black;
+          font-size: 18px;
+          font-weight: 500;
+          text-decoration: none;
         }
         &__product-arrow-container {
           display: none;
