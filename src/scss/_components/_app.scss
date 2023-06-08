@@ -36,6 +36,9 @@
           font-weight: 500;
           text-decoration: none;
         }
+        &__product-image {
+          display: flex;
+        }
         &__product-arrow-container {
           display: none;
           align-items: center;
@@ -45,12 +48,12 @@
           border-radius: 50%;
           background-color: white;
           position: absolute;
-          bottom: 54.25px;
+          bottom: 74.25px;
           right: 30px;
           &__product-arrow {
             display: flex;
-            height: 11.64px;
-            width: 12.3px;
+            height: 8.73px;
+            width: 9.23px;
           }
         }
       }

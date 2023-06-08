@@ -1,4 +1,4 @@
-@media only screen and (width >= 426px) {
+@media only screen and (width >= 601px) {
   .app__container {
     &__container-title {
       padding-top: 100px;
@@ -13,7 +13,7 @@
   }
 }
 
-@media only screen and (width <=425px) {
+@media only screen and (width <=600px) {
   .app__container {
     &__container-title {
       padding-top: 40px;
