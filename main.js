@@ -16,26 +16,27 @@ const carousel = document.querySelector(".app__container__carousel");
 products.forEach((product) => {
   const productCard = createElement("a", {
     href: "#",
-    class:
-      "app__container__carousel__product-card snap-center flex flex-col no-underline hover:scale-105 transition",
+    target: "_blank",
+    class: "app__container__carousel__product-card",
   });
   const arrowContainer = createElement("div", {
-    class: "product-arrow-container",
+    class: "app__container__carousel__product-card__product-arrow-container",
   });
   const productImg = createElement("img", {
-    class: "product-image",
+    class: "app__container__carousel__product-card__product-image",
     src: product.imgSrc,
     alt: product.imgAlt,
   });
   const productTitle = createElement(
     "h3",
     {
-      class: "product-title",
+      class: "app__container__carousel__product-card__product-title",
     },
     product.name
   );
   const arrowIcon = createElement("img", {
-    class: "product-arrow",
+    class:
+      "app__container__carousel__product-card__product-arrow-container__product-arrow",
     src: "./icons/Arrow.svg",
     alt: "Arrow icon",
   });

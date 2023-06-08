@@ -1,0 +1,12 @@
+@media only screen and (width <=425px) {
+  .app__container__container-title,
+  .app__container__carousel {
+  }
+}
+
+@media only screen and (width >= 426px) {
+  .app__container__container-title,
+  .app__container__carousel {
+    padding: 142px 0 0 0;
+  }
+}

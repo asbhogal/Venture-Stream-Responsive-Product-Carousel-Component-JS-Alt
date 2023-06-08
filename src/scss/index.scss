@@ -1,6 +1,8 @@
 @use "./_components/app" as *;
 @use "./_partials/globals" as *;
+@use "./_partials/responsive" as *;
 @use "./_partials/typography" as *;
+@use "./_partials/variables" as *;
 
 * {
   outline: 1px solid red;

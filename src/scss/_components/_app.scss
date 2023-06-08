@@ -1,3 +1,5 @@
+@use "../_partials/variables" as *;
+
 .app {
   display: flex;
   > * {
@@ -6,9 +8,43 @@
   &__container {
     flex-direction: column;
     gap: 20px;
+    overflow-x: hidden;
+    &__container-title {
+      font-size: clamp(1.75rem, 1.6562rem + 0.382vw, 2rem);
+    }
     &__carousel {
       display: flex;
       gap: 20px;
+      overflow-x: scroll;
+      &__product-card {
+        transition: $transition-03;
+        &:hover {
+          scale: 1.05;
+          transition: $transition-03;
+        }
+        &__product-arrow-container {
+          display: none;
+          align-items: center;
+          justify-content: center;
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          background-color: white;
+          position: absolute;
+          bottom: 54.25px;
+          right: 30px;
+          &__product-arrow {
+            display: flex;
+            height: 11.64px;
+            width: 12.3px;
+          }
+        }
+      }
     }
   }
+}
+
+.app__container__carousel__product-card:hover
+  .app__container__carousel__product-card__product-arrow-container {
+  display: flex;
 }
